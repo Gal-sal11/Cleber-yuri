@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="version" content="presente-css-final-1">
+<meta name="theme-color" content="#12070d"><title>Cleber & Yuri ❤️</title>
+<style>
+*{box-sizing:border-box}html,body{margin:0;min-height:100%}body{min-height:100vh;overflow-x:hidden;color:#fff5f7;background:radial-gradient(circle at 50% 45%,#a61f4a40,transparent 30%),linear-gradient(145deg,#090509,#170912 55%,#080407);font-family:Arial,sans-serif}
+main{min-height:100vh;display:flex;align-items:center;justify-content:center;padding:30px 15px;position:relative;z-index:2}.card{width:min(760px,100%);text-align:center;padding:40px 22px 32px;border:1px solid #ffffff20;border-radius:30px;background:#11070db5;backdrop-filter:blur(12px);box-shadow:0 30px 100px #0008}
+.eyebrow{letter-spacing:4px;text-transform:uppercase;font-size:10px;opacity:.55}h1{margin:8px 0;font-family:Georgia,serif;font-size:clamp(40px,9vw,74px);font-weight:500}.amp{color:#e86a92;font-style:italic}
+.heart-wrap{width:min(290px,68vw);aspect-ratio:1;margin:25px auto 18px;display:grid;place-items:center;position:relative}.halo{position:absolute;inset:8%;border-radius:50%;background:#e73c7020;animation:pulse 1.8s ease-in-out infinite}.heart{position:relative;width:45%;aspect-ratio:1;transform:rotate(-45deg);border-radius:8px 0 8px 8px;background:linear-gradient(135deg,#ff799f,#bd164e);box-shadow:0 0 35px #ff467d80,0 0 90px #ff2d6e30;animation:beat 1.25s ease-in-out infinite}.heart:before,.heart:after{content:"";position:absolute;width:100%;height:100%;border-radius:50%;background:inherit}.heart:before{top:-50%;left:0}.heart:after{top:0;left:50%}.heart span{position:absolute;z-index:2;transform:rotate(45deg);left:37%;top:33%;font-size:30px}
+@keyframes beat{0%,100%{transform:rotate(-45deg) scale(1)}12%{transform:rotate(-45deg) scale(1.08)}24%{transform:rotate(-45deg) scale(1)}36%{transform:rotate(-45deg) scale(1.05)}}@keyframes pulse{50%{transform:scale(1.18);opacity:.7}}
+.quote{font-family:Georgia,serif;font-size:21px;opacity:.82;margin:12px auto 28px;max-width:580px}.counter-title{font-size:10px;letter-spacing:3px;text-transform:uppercase;opacity:.5}.counter{display:flex;justify-content:center;flex-wrap:wrap;gap:7px;margin:12px auto 20px}.unit{min-width:88px;padding:12px 9px;border-radius:15px;background:#ffffff0b;border:1px solid #ffbed21a}.number{display:block;font-size:24px;font-weight:bold}.label{font-size:9px;text-transform:uppercase;letter-spacing:1.3px;opacity:.5}.since{font-size:10px;opacity:.42;margin-bottom:23px}
+.buttons{display:flex;justify-content:center;gap:9px;flex-wrap:wrap}button{border:1px solid #ffb4cd30;background:#ffffff0b;color:white;padding:11px 16px;border-radius:999px;cursor:pointer;font:500 11px Arial;transition:.25s}button:hover{background:#ff568420;transform:translateY(-2px)}
+.message,.music-panel{display:none;margin:20px auto 0;max-width:650px;padding:22px;border-radius:21px;background:#ffffff0b;border:1px solid #ffb4cd1a;text-align:left;animation:appear .5s ease}.message.show,.music-panel.show{display:block}.message{text-align:center}.message h2,.music-head h3{font-family:Georgia,serif;font-weight:500;margin:0 0 10px;font-size:29px}.message p{line-height:1.8;font-size:14px;opacity:.82;white-space:pre-line}.music-head{display:flex;justify-content:space-between;align-items:center}.music-head small{opacity:.5}.playlist{display:grid;gap:6px;max-height:280px;overflow:auto;margin-top:10px}.track{width:100%;display:flex;justify-content:space-between;gap:10px;text-align:left;border-radius:12px;padding:10px 12px}.track.active{background:#ff4e8022;border-color:#ff82a047}.track-name{font-size:11px}.track-name span{font-size:9px;opacity:.45}.music-note{font-size:10px;opacity:.42;line-height:1.5;margin-top:10px}audio{width:100%;height:38px;margin:10px 0}.footer{margin-top:25px;font:italic 15px Georgia,serif;opacity:.4}
+.decor{position:fixed;inset:0;z-index:1;pointer-events:none}.icon{position:absolute;opacity:.14;filter:saturate(.75);animation:float 8s ease-in-out infinite}.kitty{left:4%;top:12%;font-size:44px}.pinkie{right:5%;top:17%;font-size:40px}.seal{left:7%;bottom:17%;font-size:42px}.puffer{right:7%;bottom:22%;font-size:42px}.whale{left:45%;bottom:2%;font-size:55px}@keyframes float{50%{transform:translateY(-10px) rotate(3deg)}}@keyframes appear{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}.stars{position:fixed;inset:0;pointer-events:none;z-index:0}.star{position:absolute;width:2px;height:2px;border-radius:50%;background:white;opacity:.45}
+@media(max-width:480px){.card{padding:30px 14px}.unit{min-width:70px}.number{font-size:20px}.quote{font-size:19px}}
+
+.opening{position:fixed;inset:0;z-index:50;display:grid;place-items:center;padding:25px;background:radial-gradient(circle at 50% 45%,#a61f4a25,transparent 34%),#090509;transition:opacity .9s,visibility .9s}.opening.hidden{opacity:0;visibility:hidden;pointer-events:none}.opening-inner{text-align:center;max-width:520px;padding:30px}.opening-small{font:italic 18px Georgia,serif;opacity:.55;margin-bottom:16px}.opening-title{font:500 clamp(34px,8vw,58px) Georgia,serif;line-height:1.08}.opening-sub{font-size:13px;line-height:1.7;opacity:.52;margin:18px auto 28px;max-width:390px}.opening button{font-size:13px;padding:14px 22px;background:#ff568418;border-color:#ffb4cd45;box-shadow:0 0 30px #ff568414}
+
+.gift-toggle{position:absolute;opacity:0;pointer-events:none}
+.opening{z-index:50}
+.gift-toggle:checked ~ .opening{opacity:0;visibility:hidden;pointer-events:none}
+.open-gift{display:inline-block;cursor:pointer;font-size:13px;padding:14px 22px;border:1px solid #ffb4cd45;border-radius:999px;background:#ff568418;box-shadow:0 0 30px #ff568414;color:inherit;user-select:none;-webkit-tap-highlight-color:transparent}
+.open-gift:active{transform:scale(.98)}
+
+.ui-toggle{position:absolute;opacity:0;pointer-events:none}
+.action-button{display:inline-block;cursor:pointer}
+#message{display:none}
+#musicPanel{display:none}
+#messageToggle:checked ~ .message{display:block}
+#musicToggle:checked ~ .music-panel{display:block}
+.native-playlist details{margin:9px 0;border:1px solid rgba(255,255,255,.08);border-radius:14px;padding:10px 12px;background:rgba(255,255,255,.025)}
+.native-playlist summary{cursor:pointer;font-size:14px;line-height:1.45}
+.native-playlist audio{width:100%;margin-top:9px}
+</style>
+</head>
+<body>
+<input type="checkbox" id="giftToggle" class="gift-toggle">
+<div id="opening" class="opening">
+  <div class="opening-inner">
+    <div class="opening-small">Yuri...</div>
+    <div class="opening-title">Eu fiz uma pequena coisa para você.</div>
+    <div class="opening-sub">Não é nada grandioso. Só um pedacinho do que eu sinto.</div>
+    <label for="giftToggle" class="open-gift">♡ Abrir meu presente</label>
+  </div>
+</div>
+
+<div class="stars" id="stars"></div>
+<div class="decor" aria-hidden="true">
+<div class="icon kitty">🐱</div><div class="icon pinkie">🎀</div><div class="icon seal">🦭</div><div class="icon puffer">🐡</div><div class="icon whale">🐋</div>
+</div>
+<main><section class="card">
+<div class="eyebrow">Um pequeno presente para você</div>
+<h1>Cleber <span class="amp">&</span> Yuri</h1>
+<div class="heart-wrap"><div class="halo"></div><div class="heart"><span>♥</span></div></div>
+<div class="quote">“Antes de qualquer pergunta, eu só queria te dar uma pequena prova do quanto você é importante para mim.”</div>
+<div class="counter-title">Uma coisa que eu quero que você saiba</div>
+<div class="quote" style="margin-top:10px;margin-bottom:18px;font-size:18px">Você faz parte dos meus dias, dos meus pensamentos e de tudo aquilo que eu desejo guardar com carinho.</div>
+<div class="since">E isso é só o começo de uma história que eu ainda quero viver com você. ❤️</div>
+<div class="buttons">
+      <label class="action-button" for="messageToggle">💌 Uma mensagem para você</label>
+      <label class="action-button" for="musicToggle">🎵 Escolher nossa música</label>
+    </div>
+    <input class="ui-toggle" id="messageToggle" type="checkbox">
+    <input class="ui-toggle" id="musicToggle" type="checkbox">
+<div class="message" id="message">
+  <h2>Para você ❤️</h2>
+  <p>Eu sempre falo que amo você, nunca é da boca pra fora, sempre falo com todo meu sentimento, acho que um mundo onde você não esteja é a pior coisa de todas, eu quero cuidar de você, te dar o universo, todo amor que eu conseguir, então amor, cuida mais de você mesmo, eu te amo, você é meu herói então continue sendo você mesmo. Eu amo você em todas as suas versões.</p>
+</div>
+<div class="music-panel" id="musicPanel">
+  <div class="music-head"><div><h3>🎵 Nossa playlist</h3><small>Escolha uma música para ouvir. ❤️</small></div></div>
+  <div class="native-playlist">
+    <details open><summary>1. Oração — A Banda Mais Bonita da Cidade</summary><audio controls preload="none" src="musicas/oracao.mp3"></audio></details>
+    <details><summary>2. Ainda Bem — Xande</summary><audio controls preload="none" src="musicas/ainda-bem.mp3"></audio></details>
+    <details><summary>3. Lisboa — ANAVITÓRIA</summary><audio controls preload="none" src="musicas/lisboa.mp3"></audio></details>
+    <details><summary>4. A Lua e o Girassol — Raphyx</summary><audio controls preload="none" src="musicas/a-lua-e-o-girassol.mp3"></audio></details>
+    <details><summary>5. I'm Still Here — DJ Gummy Bear</summary><audio controls preload="none" src="musicas/im-still-here.mp3"></audio></details>
+    <details><summary>6. Until I Found You — Stephen Sanchez</summary><audio controls preload="none" src="musicas/until-i-found-you.mp3"></audio></details>
+    <details><summary>7. Those Eyes — New West</summary><audio controls preload="none" src="musicas/those-eyes.mp3"></audio></details>
+    <details><summary>8. Reflections — The Neighbourhood</summary><audio controls preload="none" src="musicas/reflections.mp3"></audio></details>
+    <details><summary>9. This I Love — Guns N' Roses</summary><audio controls preload="none" src="musicas/this-i-love.mp3"></audio></details>
+  </div>
+  <div class="music-note">No celular, toque no ▶ da música que quiser ouvir. O navegador controla o áudio diretamente. ❤️</div>
+</div></div><audio id="audio" controls preload="metadata"></audio><div class="playlist" id="playlist"></div><div class="music-note">As músicas estão na ordem escolhida. Para tocar os arquivos, insira os links/arquivos de áudio nos campos url abaixo. Em celulares, o navegador pode exigir um toque antes do áudio automático.</div></div>
+<div class="footer">e cada segundo daqui pra frente é nosso.</div>
+</section></main>
+
+</body></html>
